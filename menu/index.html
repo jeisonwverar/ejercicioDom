@@ -33,7 +33,7 @@
             <a href="#seccion11" data-scroll-spy >Sorteo Digital</a>
             <a href="#seccion12" data-scroll-spy >Responsive Slider</a>
             <a href="#seccion13" data-scroll-spy >Video inteligente</a>
-            <a href="#seccion14" data-scroll-spy >seccion10</a>
+            <a href="#seccion14" data-scroll-spy >Validación de Formularío</a>
             <a href="#seccion15" data-scroll-spy >seccion10</a>
         </nav>
     </aside>
@@ -81,18 +81,18 @@
             <h2>Deteccion de Dispositivos <br>(User Agent)</h2>
             <div id="user-device"></div>
         </section>
-        <section id="seccion7" class="seccion7">
+        <section id="seccion7" class="seccion" data-scroll-spy>
             <h2>Detección de la conexión</h2>
         </section>
-        <section id="seccion8" class="seccion5">
+        <section id="seccion8" class="seccion" data-scroll-spy>
             <h2>Detección de la cámara web</h2>
             <video  id="webcam"></video>
         </section>
-        <section id="seccion9" class="seccion5">
+        <section id="seccion9" class="seccion" data-scroll-spy>
             <h2>Geolocalización</h2>
                 <div id="geolocation"></div>
         </section>
-        <section id="seccion10" class="seccion5">
+        <section id="seccion10" class="seccion" data-scroll-spy>
             <h2>Filtros de búsqueda</h2>
             <input type="search" placeholder="Buscar..." class="card-filter">
             <article class="cards">
@@ -178,7 +178,30 @@
         </section>
         </section>
         <section id="seccion14" class="seccion" data-scroll-spy>
-            <h2>sección 10</h2>
+            <h2>Validación de Formularío</h2>
+        </section>
+        <section id="seccion14" class="seccion" data-scroll-spy>
+            <h2>Validación de Formularío</h2>
+            <form action="" class="contact_form">
+                <legend>Envíanos tus comentarios</legend>
+                <input type="text" name="name" placeholder="Escribe tu nombre" 
+                title="El Nombre solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input type="email" name="email" id="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                placeholder="Escribe tu correo" required>
+                <input type="text" name="subject" placeholder="Asunto a tratar" required>
+                <textarea name="comments" id="subject" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" required>
+                    
+                </textarea>
+                <input type="submit" value="Enviar" title="el asunto es requerido" >
+                <div class="contact-form-loader none">
+                    <img src="/menu/assets/loader.svg" alt="Cargando">
+                </div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+
+
+            </form>
         </section>
       </main>
       <button class="scroll-top-btn btn-hidden">&#11014;</button>
